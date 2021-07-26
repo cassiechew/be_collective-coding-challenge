@@ -1,0 +1,9 @@
+{
+    "app": {
+        "api": {
+            "files": {
+                "url": "https://dev21.becollective.com/api/v2/coding-challenges/dirs"
+            }
+        }
+    }
+}
