@@ -29,3 +29,4 @@ To update testing snapshots.
 ```sh
 yarn test:update
 ```
+To enable an extension or a further modification of the data. A postman collection has been added to allow contributers to more easily see the output of the data.
