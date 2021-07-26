@@ -15,3 +15,17 @@ After which instructions will appear to run it on the local network with serve.
 serve -s build
 ```
 This runs the app and will be accessable through the network address provided.
+
+# Testing
+To run the react testing tool use.
+```sh
+yarn test
+```
+To get test coverage.
+```sh
+yarn test:coverage
+```
+To update testing snapshots.
+```sh
+yarn test:update
+```
