@@ -5,6 +5,11 @@ import { FileView } from './containers/Files';
 import { useState } from 'react';
 import './App.scss';
 
+/**
+ * This is the app container
+ * 
+ * @Component 
+ */
 function App() {
   const [numFiles, setNumFiles] = useState(0);
   const [fileSize, setFileSize] = useState(0);
@@ -14,7 +19,6 @@ function App() {
       <Header className="container__header" title="File Viewer" />
       <FileView setParentNumFiles={setNumFiles} setParentFileSize={setFileSize} />
       <Footer numFiles={numFiles} fileSize={fileSize} />
-
     </div>
   );
 }

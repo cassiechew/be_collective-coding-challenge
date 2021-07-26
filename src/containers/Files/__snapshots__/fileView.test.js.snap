@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test testing footer 1`] = `
+<div
+  className="container"
+>
+  <div
+    className="container__file-list"
+  />
+</div>
+`;

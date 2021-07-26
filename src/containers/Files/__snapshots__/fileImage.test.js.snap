@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test testing footer 1`] = `
+<div>
+  <img
+    alt="failed"
+    src="source/url"
+  />
+</div>
+`;

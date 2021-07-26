@@ -12,6 +12,7 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "4.0.3",
+    "react-test-renderer": "^17.0.2",
     "uuid": "^8.3.2",
     "web-vitals": "^1.0.1"
   },
@@ -19,6 +20,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:coverage": "react-scripts test --coverage",
+    "test:update": "react-scripts test --updateSnapshot",
     "eject": "react-scripts eject",
     "docs": "jsdoc -c jsdoc.conf.json"
   },

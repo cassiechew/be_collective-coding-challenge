@@ -1,0 +1,34 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`snapshot test testing app 1`] = `
+<div
+  className="container__app"
+>
+  <div
+    className="container__header"
+  >
+    <h1>
+      File Viewer
+    </h1>
+  </div>
+  <div
+    className="container"
+  >
+    <div
+      className="container__file-list"
+    />
+  </div>
+  <div
+    className="container__footer"
+  >
+    <h3>
+      Total Files: 
+      0
+    </h3>
+    <h3>
+      Total File Size: 
+      0
+    </h3>
+  </div>
+</div>
+`;
