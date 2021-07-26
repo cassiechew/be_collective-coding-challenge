@@ -37,7 +37,6 @@ export const getFiles = async (options) => {
  * Hook API connection for getting list of movie.
  */
 export const useGetFiles = () => {
-    const [isLoading, setIsLoading] = useState(false);
     const [error, setError] = useState(null);
     const [data, setData] = useState(null);
 
@@ -45,19 +44,16 @@ export const useGetFiles = () => {
         method: "GET",
     }) => {
         try {
-            setIsLoading(true);
             const files = await getFiles(options);
             setData(files);
             return files;
         } catch (e) {
             setError(e);
-            setIsLoading(false);
             throw e;
         }
     };
 
     return {
-        isLoading,
         error,
         data,
         execute: useCallback(execute, [])
@@ -71,7 +67,6 @@ export const useGetFiles = () => {
  */
 export default function FileList(props) {
     const {
-        isLoading,
         data,
         execute,
     } = useGetFiles();
