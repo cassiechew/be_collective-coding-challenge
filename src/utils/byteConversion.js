@@ -3,6 +3,7 @@
 const BYTE_BLOCK = 1024;
 const byteNames = ['B', 'KB', 'MB', 'GB', 'TB', 'PB'];
 
+
 /**
  * This will convert bytes into a smaller representation
  * 

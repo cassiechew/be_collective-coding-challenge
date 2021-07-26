@@ -1,6 +1,7 @@
 import { Items as fileData } from '../containers/Files/fileList';
 import Folder from '../containers/Files/folder';
 import File from '../containers/Files/file';
+import ByteConversion from './byteConversion';
 
 import { v4 as uuidv4 } from 'uuid';
 
@@ -19,22 +20,22 @@ export default async function fileStructureGenerator (data) {
         if (data[i].type === "folder") {
             let children = await fileStructureGenerator(data[i].children);
             let newFolder = (
-                <div>
-                    <Folder name={data[i].name} children={children} key={uuidv4()} />
+                <div key={uuidv4()}>
+                    <Folder name={data[i].name} children={children} />
                 </div>
             )
-            console.log(children);
             base.push(newFolder);
         }
         else {
-            let newFile = (<File name={data[i].name} size={data[i].size} key={uuidv4()}  />)
+            let conv = ByteConversion(parseInt(data[i].size), 0)
+            let newFile = (<File name={data[i].name} size={conv} key={uuidv4()}  />)
             base.push(newFile)
             size += data[i].size;
             count++;
         }
     }
 
-    fileData.setParentFileSize(size)
+    fileData.setParentFileSize(ByteConversion(parseInt(size), 0))
     fileData.setParentNumFiles(count)
 
     return base;
