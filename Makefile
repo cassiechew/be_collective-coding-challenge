@@ -6,6 +6,9 @@ build:
 run: build
 	serve -s build
 
+test:
+	yarn test
+
 docs:
 	yarn docs
 

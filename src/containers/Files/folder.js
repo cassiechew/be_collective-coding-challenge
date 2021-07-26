@@ -37,7 +37,6 @@ export default function Folder(props) {
     const triggerClosedFolderState = () => {
         setState('closed');
     };
-    console.log(props.name)
 
     return (
         <div className="container__folder">
