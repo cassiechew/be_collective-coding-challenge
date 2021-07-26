@@ -1,16 +1,21 @@
 div {
-    .container__folder {
-        padding-left: 20%;
-    }
-
     .container__view {
-        padding-left: 20%;
+        padding-left: 15%;
+    }
+    .container__folder {
+        padding-left: 5%;
+    }
+    .container__file {
+        padding-left: 5%;
+    }
+    .container__file-list {
+        padding-left: 10%;
     }
 }
 
 img {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
 }
 
 button {

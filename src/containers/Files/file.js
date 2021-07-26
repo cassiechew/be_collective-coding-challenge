@@ -4,16 +4,14 @@ import './files.scss';
 import fileImage from '../../assets/image/file/file.png';
 import FileImage from './fileImage';
 
-const selectImage = (type) => {
-
-}
-
-// TODO
-// figure out props
-
+/**
+ * Component for showing an individual file
+ * 
+ * @Component
+ */
 export default function File(props) {
     return(
-        <div>
+        <div className="container__file">
             <FileImage src={fileImage} /> {props.name + " " + props.size}
         </div>
     )

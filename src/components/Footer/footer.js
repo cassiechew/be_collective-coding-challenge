@@ -1,5 +1,10 @@
 import './footer.scss';
 
+/**
+ * Component to hold a footer
+ * 
+ * @Component
+ */
 export default function Footer(props) {
     return(
         <div className="container__footer">
