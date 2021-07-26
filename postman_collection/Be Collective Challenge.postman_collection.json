@@ -1,0 +1,18 @@
+{
+	"info": {
+		"_postman_id": "bd95b6d7-255b-4c7f-a55b-934ccb1b3c9a",
+		"name": "Be Collective Challenge",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET Directories and Files",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": null
+			},
+			"response": []
+		}
+	]
+}
