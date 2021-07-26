@@ -8,7 +8,7 @@ import React from 'react';
 export default function FileImage(props) {
     return (
         <div>
-            <img src={props.src} alt="failed" onClick={props.event} />
+            <img src={props.src} alt="failed" onClick={props.event} /> {props.text}
         </div>
     )
 }

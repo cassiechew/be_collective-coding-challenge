@@ -9,8 +9,8 @@ exports[`snapshot test testing footer 1`] = `
       alt="failed"
       src="file.png"
     />
+     
+    name size
   </div>
-   
-  name size
 </div>
 `;

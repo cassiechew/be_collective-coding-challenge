@@ -9,6 +9,7 @@ exports[`snapshot test testing footer 1`] = `
   </h3>
   <h3>
     Total File Size: 
+     B
   </h3>
 </div>
 `;

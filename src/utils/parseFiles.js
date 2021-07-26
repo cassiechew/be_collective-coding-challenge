@@ -18,7 +18,11 @@ export default async function fileStructureGenerator (data) {
     for(let i = 0; i < data.length; i++) {
         if (data[i].type === "folder") {
             let children = await fileStructureGenerator(data[i].children);
-            let newFolder = (<Folder children={children} key={uuidv4()} />)
+            let newFolder = (
+                <div>
+                    <Folder name={data[i].name} children={children} key={uuidv4()} />
+                </div>
+            )
             console.log(children);
             base.push(newFolder);
         }

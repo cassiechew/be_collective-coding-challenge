@@ -4,14 +4,27 @@ exports[`snapshot test testing footer 1`] = `
 <div
   className="container__folder"
 >
-  <button>
-    <div>
-      <img
-        alt="failed"
-        onClick={[Function]}
-        src="folder.png"
-      />
-    </div>
-  </button>
+  <div
+    className="container__folder-block"
+  >
+    <img
+      alt="failed"
+      src="arrows.png"
+    />
+    <button>
+      <div>
+        <img
+          alt="failed"
+          onClick={[Function]}
+          src="folder.png"
+        />
+         
+        name
+      </div>
+    </button>
+    <label>
+      name
+    </label>
+  </div>
 </div>
 `;

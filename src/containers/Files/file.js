@@ -12,7 +12,7 @@ import FileImage from './fileImage';
 export default function File(props) {
     return(
         <div className="container__file">
-            <FileImage src={fileImage} /> {props.name + " " + props.size}
+            <FileImage src={fileImage} text={props.name + " " + props.size}/>
         </div>
     )
 }

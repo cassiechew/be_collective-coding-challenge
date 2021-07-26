@@ -5,8 +5,12 @@ div {
     .container__folder {
         padding-left: 5%;
     }
-    .container__file {
+    .container__folder-block {
         padding-left: 5%;
+        flex-direction: row;
+    }
+    .container__file {
+        padding-left: 18%;
     }
     .container__file-list {
         padding-left: 10%;
